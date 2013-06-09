@@ -7,7 +7,7 @@ class wireshark {
   include homebrew
   include xquartz
 
-  package { 'wireshark':
+  package { 'Wireshark':
     provider => homebrew,
   }
 }
