@@ -1,6 +1,13 @@
 # Public: Install Wireshark into /Applications
 #
+# Examples:
+#
+#   include wireshark
 class wireshark {
-  include x86
-  include x64
+  include homebrew
+  include xquartz
+
+  package { 'wireshark':
+    provider => homebrew,
+  }
 }
