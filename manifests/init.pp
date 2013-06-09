@@ -8,6 +8,8 @@ class wireshark {
   include xquartz
 
   package { 'Wireshark':
-    provider => homebrew,
+    ensure          => installed,
+    install_options => ['--with-x'],
+    provider        => homebrew,
   }
 }
