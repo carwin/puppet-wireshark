@@ -1,9 +1,10 @@
 require 'spec_helper'
 
 describe 'wireshark' do
-    let(:pre_condition) { "class homebrew {}" }
-    let(:pre_condition) { "class xquartz {}" }
+    let(:pre_condition) { ["class homebrew {}", "class xquartz {}"] }
 
-    it { should contain_class('wireshark') }
-    it { should contain_package('wireshark') }
+    it do
+      should contain_class('wireshark')
+      should contain_package('Wireshark')
+    end
 end
