@@ -5,7 +5,7 @@
 #   include wireshark::x64
 class wireshark::x64 {
   package { 'Wireshark-x64':
-    source   => "http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.10.0%20Intel%2064.dmg",
+    source   => 'http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.10.0%20Intel%2064.dmg',
     provider => 'appdmg'
   }
 }

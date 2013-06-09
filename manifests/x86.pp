@@ -5,7 +5,7 @@
 #   include wireshark::x86
 class wireshark::x86 {
   package { 'Wireshark-x86':
-    source   => "http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.10.0%20Intel%2032.dmg",
+    source   => 'http://wiresharkdownloads.riverbed.com/wireshark/osx/Wireshark%201.10.0%20Intel%2032.dmg',
     provider => 'appdmg'
   }
 }
