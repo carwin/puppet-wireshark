@@ -1,4 +1,9 @@
-# This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
+# Installs Wireshark
+#
+# Usage:
+#
+#   include wireshark
+class wireshark {
+  include x86
+  include x64
 }
